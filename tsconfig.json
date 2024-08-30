@@ -18,8 +18,8 @@
       }
     ],
     "paths": {
-      "@/assets/*": ["./app/lib/assets/*"],
-      "@/components/*": ["./app/lib/components/*"],
+      "@/assets/*": ["./app/assets/*"],
+      "@/components/*": ["./app/components/*"],
       "@/constants/*": ["./app/lib/constants/*"],
       "@/services/*": ["./app/lib/services/*"],
       "@/utils/*": ["./app/lib/utils/*"]
