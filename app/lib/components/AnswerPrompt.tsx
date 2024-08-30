@@ -12,7 +12,7 @@ export const AnswerPrompt = ({ answer }: AnswerPromptProps) => {
   const { pending } = useFormStatus()
 
   return (
-    <div className="w-120 h-40 bg-white mt-10 rounded-md ">
+    <div className="w-120 min-h-30 bg-white mt-10 rounded-md ">
       {pending ? (
         <Vicky
           imageUrl={`/vicky/${randomNum()}.jpeg`}
