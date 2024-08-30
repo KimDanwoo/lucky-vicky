@@ -30,7 +30,7 @@ export const DynamicTextarea = ({
       placeholder={placeholder}
       value={content}
       onChange={(e) => setContent(e.target.value)}
-      className={`w-full p-2 border rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-800 border-1 border-black ${className}`}
+      className={`w-full p-3 border rounded resize-none focus:outline-none focus:ring-1 focus:ring-blue-500 text-blue-800 bg-slate-100 ${className}`}
       required
       rows={1}
     />

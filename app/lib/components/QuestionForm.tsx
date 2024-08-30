@@ -11,7 +11,7 @@ export const QuestionForm = () => {
 
   return (
     <form
-      className="max-w-3xl m-auto bg-white rounded-md p-4"
+      className="max-w-3xl m-auto bg-white rounded-l-xl p-4"
       action={dispatch}
     >
       <div className="flex flex-col items-end gap-3">

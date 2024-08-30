@@ -1,9 +1,8 @@
-import { QuestionForm } from '@/app/components/QuestionForm'
-import Image from 'next/image'
+import { QuestionForm } from '@/components/QuestionForm'
 
 export default function Home() {
   return (
-    <main className="min-h-screen pr-24 pl-24 pt-20 h-full">
+    <main className="min-h-screen pl-6 pr-6 pt-6 h-full">
       <div>
         <h1 className="text-center text-6xl mb-4">🍀LUCKY VICKY🍀</h1>
         <div className="mb-10 m-auto text-center text-gray-500">
