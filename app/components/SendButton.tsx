@@ -1,7 +1,7 @@
 'use client'
 
 import { useFormStatus } from 'react-dom'
-import { Spinner } from './Spinner'
+import { Spinner } from '@/components/Spinner'
 
 export const SendButton = () => {
   const { pending } = useFormStatus()
