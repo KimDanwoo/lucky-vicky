@@ -12,18 +12,19 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./app",
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["app/*"],
-      "@assets/*": ["app/assets/*"],
-      "@components/*": ["app/components/*"],
-      "@constants/*": ["app/lib/constants/*"],
-      "@services/*": ["app/lib/services/*"],
-      "@utils/*": ["app/lib/utils/*"]
+      "@/*": ["*"],
+      "assets/*": ["assets/*"],
+      "components/*": ["components/*"],
+      "constants/*": ["lib/constants/*"],
+      "services/*": ["lib/services/*"],
+      "utils/*": ["lib/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -1,14 +1,14 @@
-'use server'
+'use server';
 
-import OpenAI from 'openai'
-import { prompts } from '@/constants/prompts'
+import OpenAI from 'openai';
+import { prompts } from 'constants/prompts';
 
 const openAi = new OpenAI({
   apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY || '',
-})
+});
 
 export const createAnswer = async (_: any, formData: FormData) => {
-  const situation = formData.get('situation') as string
+  const situation = formData.get('situation') as string;
   try {
     const response = await openAi.chat.completions.create({
       model: 'gpt-4o',
@@ -19,9 +19,9 @@ export const createAnswer = async (_: any, formData: FormData) => {
           content: situation,
         },
       ],
-    })
-    return response.choices[0]?.message?.content || ''
+    });
+    return response.choices[0]?.message?.content || '';
   } catch (error) {
-    return '오류가 발생했습니다.'
+    return '오류가 발생했습니다.';
   }
-}
+};

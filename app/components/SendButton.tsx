@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import { useFormStatus } from 'react-dom'
-import { Spinner } from '@/components/Spinner'
+import { useFormStatus } from 'react-dom';
+import { Spinner } from 'components/index';
 
 export const SendButton = () => {
-  const { pending } = useFormStatus()
+  const { pending } = useFormStatus();
 
   return (
     <button
@@ -14,5 +14,5 @@ export const SendButton = () => {
     >
       {pending ? <Spinner /> : '러키비키 얍!✨'}
     </button>
-  )
-}
+  );
+};
