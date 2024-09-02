@@ -16,11 +16,15 @@ export const DynamicTextarea = ({
   const [content, setContent] = useState('')
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
-  useEffect(() => {
+  const adjustHeight = () => {
     if (textareaRef.current) {
-      textareaRef.current.style.height = 'auto'
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`
+      textareaRef.current.style.height = 'auto' // 기존 높이 리셋
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px` // 새로운 높이 설정
     }
+  }
+
+  useEffect(() => {
+    adjustHeight() // 초기 렌더링 시 높이 조정
   }, [content])
 
   return (
