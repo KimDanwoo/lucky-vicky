@@ -20,11 +20,11 @@
     ],
     "paths": {
       "@/*": ["*"],
-      "assets/*": ["assets/*"],
-      "components/*": ["components/*"],
-      "constants/*": ["lib/constants/*"],
-      "services/*": ["lib/services/*"],
-      "utils/*": ["lib/utils/*"]
+      "assets/*": ["shared/assets/*"],
+      "components/*": ["shared/components/*"],
+      "constants/*": ["shared/constants/*"],
+      "services/*": ["shared/services/*"],
+      "utils/*": ["shared/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

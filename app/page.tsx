@@ -1,4 +1,4 @@
-import { QuestionForm } from 'components/index';
+import { QuestionForm } from 'components/index'
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       </div>
       <QuestionForm />
     </main>
-  );
+  )
 }

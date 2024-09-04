@@ -1,11 +1,11 @@
-'use client';
+'use client'
 
-import { SendButton, AnswerPrompt, DynamicTextarea as Textarea } from '@/components/index';
-import { useFormState, useFormStatus } from 'react-dom';
-import { createAnswer } from 'services/openai.action';
+import { SendButton, AnswerPrompt, DynamicTextarea as Textarea } from 'components/index'
+import { useFormState } from 'react-dom'
+import { createAnswer } from 'services/openai.action'
 
 export const QuestionForm = () => {
-  const [answer, dispatch] = useFormState(createAnswer, '');
+  const [answer, dispatch] = useFormState(createAnswer, '')
 
   return (
     <form className="max-w-3xl m-auto min-h-1 bg-white rounded-xl p-4" action={dispatch}>
@@ -17,5 +17,5 @@ export const QuestionForm = () => {
         <AnswerPrompt answer={answer} />
       </div>
     </form>
-  );
-};
+  )
+}

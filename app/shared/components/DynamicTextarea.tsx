@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useRef, useState } from 'react'
 
 type DynamicTextareaProps = {
@@ -8,11 +7,7 @@ type DynamicTextareaProps = {
   className?: string
 }
 
-export const DynamicTextarea = ({
-  name,
-  placeholder,
-  className,
-}: DynamicTextareaProps) => {
+export const DynamicTextarea = ({ name, placeholder, className }: DynamicTextareaProps) => {
   const [content, setContent] = useState('')
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
